@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script language="javascript" type="text/javascript" src="imc.js"></script>
+    <script language="javascript" type="text/javascript" src="fcm.js"></script>
+    <script language="javascript" type="text/javascript" src="categoria.js"></script>
+    <script language="javascript" type="text/javascript" src="horarios.js"></script>
+    <link rel="stylesheet" href="header.css">
+
+</head>
+
+<header>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="imc.html">Imc</a>
+        <a href="fcm.html">Fcm</a>
+        <a href="categoria.html">Categoria</a>
+        <a href="horario.html">Horario</a>
+        <div class="animation start-home"></div>
+    </nav>
+
+
+</header>
+
+<body>
+    <h2>Calculadora indice de mása corporal</h2>
+    <p>Ingrese peso(kg): <input type="text" id="kg"></p>
+    <p>Ingrese altura(cm): <input type="text" id="cm"></p>
+    <p><input type="button" value="Calcular" onclick="calcular()"></p>
+    <p>Resultado: <span id="imc"></span></p>
+    <p>Lectura: <span id="lectura"></span></p>
+
+
+    <h2>Calculadora Frecuencia Cardiaca Máxima</h2>
+    <p>Ingrese edad: <input type="text" id="edad"></p>
+    <p>sexo: <input type="text" id="sexo"></p>
+    <input id="calc2" type="button" value="Calcular" onclick="calcular2()"></input>
+    <p>Frecuencia máxima: <span id="frecuencia"></span></p>
+    <p>Frecuencia: <br> <span id="lectura2"></span></p>
+    <p> <span id="lectura3"></span></p>
+    <p> <span id="lectura4"></span></p>
+    <p> <span id="lectura5"></span></p>
+
+    <h2>Calculadora de categoria</h2>
+    <p>Ingresa año de nacimiento : <input type="text" id="anio"></p>
+    <input id="calc3" type="button" value="Calcular" onclick="calcular3()"></input>
+    <p>Categoria: <span id="lectura6"></span></p>
+
+
+    <h2>Horario mañana/tarde</h2>
+    <p><input type="button" value="Horario Mañana" onclick="manana()"></p>
+    <p><input type="button" value="Horario tarde" onclick="tarde()"></p>
+    <div id="tabla"></div>
+    <div id="tabla2"></div>
+
+</body>
+
+<footer>
+
+    <p>Author: Jose Maria Garcia Perez</p>
+
+
+
+</footer>
+
+</html>
